@@ -4,10 +4,6 @@
 
 This repository provides a patch for the `js2py` library to ensure compatibility with Python versions 3.12 and above. The `js2py` library, a popular JavaScript-to-Python transpiler, has compatibility issues with newer Python versions due to changes in bytecode and opcode mappings. This patch addresses these issues to restore functionality.
 
-## Purpose
-
-`js2py` does not work properly with Python versions 3.12 and above due to changes in Python's internal bytecode representation and opcode mappings. This repository offers a solution by modifying the relevant files in the `js2py` package to support these newer Python versions.
-
 ## Installation
 
 1. **Apply the compatibility patch: Run the provided Python script to modify the necessary files in the `js2py` package:**
