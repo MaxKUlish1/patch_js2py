@@ -30,4 +30,6 @@ js_code = 'function add(a, b) { return a + b; }'
 js_function = eval_js(js_code)
 result = js_function(5, 3)
 print(result)  # Ожидаемый результат: 8
+```
 
+[HIDDEN_CODING](t.me/hidden_coding)
