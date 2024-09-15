@@ -27,5 +27,7 @@
 from js2py import eval_js
 
 js_code = 'function add(a, b) { return a + b; }'
-result = eval_js(js_code).add(5, 3)
+js_function = eval_js(js_code)
+result = js_function(5, 3)
 print(result)  # Ожидаемый результат: 8
+
