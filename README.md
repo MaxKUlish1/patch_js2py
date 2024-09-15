@@ -1,4 +1,4 @@
-[ENGLISH](https://github.com/MaxKUlish1/patch_js2py/blob/main/README-ru.md)
+[ENGLISH](https://github.com/MaxKUlish1/patch_js2py/blob/main/README-en.md)
 
 # Исправление совместимости js2py
 
