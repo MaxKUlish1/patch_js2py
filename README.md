@@ -32,4 +32,4 @@ result = js_function(5, 3)
 print(result)  # Ожидаемый результат: 8
 ```
 
-[HIDDEN_CODING](t.me/hidden_coding)
+[HIDDEN_CODING](https://t.me/hidden_codding_chat)
