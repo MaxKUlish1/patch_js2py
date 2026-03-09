@@ -1,27 +1,25 @@
-[ENGLISH](https://github.com/MaxKUlish1/patch_js2py/blob/main/README-en.md)
+# js2py Compatibility Fix
 
-# Исправление совместимости js2py
+## Overview
 
-## Обзор
+This repository provides a patch for the `js2py` library to ensure compatibility with Python versions 3.12 and above. The `js2py` library, a popular JavaScript-to-Python transpiler, has compatibility issues with newer Python versions due to changes in bytecode and opcode mappings. This patch addresses these issues to restore functionality.
 
-Этот репозиторий предоставляет патч для библиотеки `js2py`, чтобы обеспечить её совместимость с версиями Python 3.12 и выше. Библиотека `js2py`, популярный транспилятор JavaScript в Python, имеет проблемы совместимости с новыми версиями Python из-за изменений в байт-коде и сопоставлении опкодов. Этот патч устраняет эти проблемы и восстанавливает функциональность.
+## Installation
 
-## Установка
-
-1. **Примените патч совместимости: Запустите предоставленный скрипт на Python для модификации необходимых файлов в пакете `js2py`:**
+1. **Apply the compatibility patch: Run the provided Python script to modify the necessary files in the `js2py` package:**
 
     ```bash
     python apply_patch.py
     ```
 
-## Изменённые файлы
+## Files Modified
 
-- `js2py/translators/translating_nodes.py`: Обновляет генерацию случайных чисел для совместимости.
-- `js2py/utils/injector.py`: Добавляет сопоставление опкодов `LOAD_ATTR` и корректирует обработку байт-кода для новых версий Python.
+- `js2py/translators/translating_nodes.py`: Updates the random number generation for compatibility.
+- `js2py/utils/injector.py`: Adds `LOAD_ATTR` opcode mapping and adjusts bytecode handling for newer Python versions.
 
-## Пример
+## Example
 
-Чтобы продемонстрировать использование этой исправленной библиотеки `js2py`, базовый пример:
+To demonstrate the use of this patched `js2py` library, here is a basic example:
 
 ```python
 from js2py import eval_js
@@ -29,7 +27,4 @@ from js2py import eval_js
 js_code = 'function add(a, b) { return a + b; }'
 js_function = eval_js(js_code)
 result = js_function(5, 3)
-print(result)  # Ожидаемый результат: 8
-```
-
-[HIDDEN_CODING](https://t.me/hidden_codding_chat)
+print(result)  # Output should be 8
