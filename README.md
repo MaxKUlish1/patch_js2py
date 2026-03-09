@@ -1,3 +1,5 @@
+[RU](https://github.com/MaxKUlish1/patch_js2py/blob/main/README-ru.md)
+
 # js2py Compatibility Fix
 
 ## Overview
